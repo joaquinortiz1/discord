@@ -1,0 +1,30 @@
+class Profile:
+    ##atributos##
+    # adios vaquero atributo ;-(
+    ##fin atributos##
+    def __init__(self,id,nickname,avatar,created_at,mail,is_premium=False,status="online"):
+        self.id=id
+        self.nickname=nickname
+        self.avatar=avatar
+        self.status=status
+        self.created_at=created_at
+        self.mail=mail
+        self.is_premium=is_premium
+        #self.microphone=microphone
+        
+    def imprimir(self):
+        print("El objeto id es: "+str(self.id))
+        print("El apodo es:"+str(self.nickname))
+        print("El avatar es:"+str(self.avatar))
+        print("La fecha de creacion es:"+str(self.created_at))
+        print("El mail es:"+str(self.mail))
+        print("La cuenta es premium?:"+str(self.is_premium))
+        print("El estatus es:"+str(self.status))
+        
+from classprofile import Profile
+
+def main():
+    profile=Profile(1,"pancontomate","rgb.png","2018-06-21",'pancontomate@quericoeltomate.com',False,"online")
+
+    profile.imprimir()
+main()
