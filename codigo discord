@@ -24,6 +24,11 @@ class Profile:
 from classprofile import Profile
 
 def main():
+    id=int(input("ingrese el id: "))
+    nickname=input("ingrese su apodo: ")
+    avatar=input("ingrese el avatar: ")
+    created_at=input("")
+
     profile=Profile(1,"pancontomate","rgb.png","2018-06-21",'pancontomate@quericoeltomate.com',False,"online")
 
     profile.imprimir()
